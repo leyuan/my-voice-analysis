@@ -37,11 +37,11 @@ def mysppaus(m,p):
         z2=z1.strip().split()
         z3=int(z2[1]) # will be the integer number 10
         z4=float(z2[3]) # will be the floating point number 8.3
-        print ("number_of_pauses=",z3)
+        # number of pauses
+        return z3
     except:
         z3=0
-        print ("Try again the sound of the audio was not clear")
-    return; 
+        return
 
 def myspsr(m,p):
     sound=p+"/"+m+".wav"
@@ -54,11 +54,11 @@ def myspsr(m,p):
         z2=z1.strip().split()
         z3=int(z2[2]) # will be the integer number 10
         z4=float(z2[3]) # will be the floating point number 8.3
-        print ("rate_of_speech=",z3,"# syllables/sec original duration")
+        # rate of speech - syllables/sec original duration
+        return z3
     except:
         z3=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return
 
 def myspatc(m,p):
     sound=p+"/"+m+".wav"
@@ -71,11 +71,11 @@ def myspatc(m,p):
         z2=z1.strip().split()
         z3=int(z2[3]) # will be the integer number 10
         z4=float(z2[3]) # will be the floating point number 8.3
-        print ("articulation_rate=",z3,"# syllables/sec speaking duration")
+        # articulation rate, syllables/sec speaking duration
+        return z3
     except:
         z3=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return
 
 def myspst(m,p):
     sound=p+"/"+m+".wav"
@@ -88,11 +88,11 @@ def myspst(m,p):
         z2=z1.strip().split()
         z3=int(z2[3]) # will be the integer number 10
         z4=float(z2[4]) # will be the floating point number 8.3
-        print ("speaking_duration=",z4,"# sec only speaking duration without pauses")
+        # speaking duration, sec only speaking duration without pauses
+        return z4
     except:
         z4=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return;
 
 def myspod(m,p):
     sound=p+"/"+m+".wav"
@@ -105,11 +105,11 @@ def myspod(m,p):
         z2=z1.strip().split()
         z3=int(z2[3]) # will be the integer number 10
         z4=float(z2[5]) # will be the floating point number 8.3
-        print ("original_duration=",z4,"# sec total speaking duration with pauses")
+        # original duration, # sec total speaking duration with pauses
+        return z4
     except:
         z4=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return
 
 def myspbala(m,p):
     sound=p+"/"+m+".wav"
@@ -122,11 +122,11 @@ def myspbala(m,p):
         z2=z1.strip().split()
         z3=int(z2[3]) # will be the integer number 10
         z4=float(z2[6]) # will be the floating point number 8.3
-        print ("balance=",z4,"# ratio (speaking duration)/(original duration)")
+        # ratio (speaking duration)/(original duration)"
+        return z4
     except:
         z4=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return
 
 def myspf0mean(m,p):
     sound=p+"/"+m+".wav"
@@ -139,11 +139,11 @@ def myspf0mean(m,p):
         z2=z1.strip().split()
         z3=int(z2[3]) # will be the integer number 10
         z4=float(z2[7]) # will be the floating point number 8.3
-        print ("f0_mean=",z4,"# Hz global mean of fundamental frequency distribution")
+        # f0_mean, # Hz global mean of fundamental frequency distribution
+        return z4
     except:
         z4=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return
 
 def myspf0sd(m,p):
     sound=p+"/"+m+".wav"
@@ -156,11 +156,11 @@ def myspf0sd(m,p):
         z2=z1.strip().split()
         z3=int(z2[3]) # will be the integer number 10
         z4=float(z2[8]) # will be the floating point number 8.3
-        print ("f0_SD=",z4,"# Hz global standard deviation of fundamental frequency distribution")
+        # f0_SD, Hz global standard deviation of fundamental frequency distribution
+        return z4
     except:
         z4=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return
 
 def myspf0med(m,p):
     sound=p+"/"+m+".wav"
@@ -173,11 +173,11 @@ def myspf0med(m,p):
         z2=z1.strip().split()
         z3=int(z2[3]) # will be the integer number 10
         z4=float(z2[9]) # will be the floating point number 8.3
-        print ("f0_MD=",z4,"# Hz global median of fundamental frequency distribution")
+        # f0_MD, Hz global median of fundamental frequency distribution
+        return z4
     except:
         z4=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return
 
 def myspf0min(m,p):
     sound=p+"/"+m+".wav"
@@ -190,11 +190,11 @@ def myspf0min(m,p):
         z2=z1.strip().split()
         z3=int(z2[10]) # will be the integer number 10
         z4=float(z2[10]) # will be the floating point number 8.3
-        print ("f0_min=",z3,"# Hz global minimum of fundamental frequency distribution")
+        # f0_min, Hz global minimum of fundamental frequency distribution
+        return z3
     except:
         z3=0
-        print ("Try again the sound of the audio was not clear") 
-    return;
+        return
 
 def myspf0max(m,p):
     sound=p+"/"+m+".wav"
@@ -207,11 +207,11 @@ def myspf0max(m,p):
         z2=z1.strip().split()
         z3=int(z2[11]) # will be the integer number 10
         z4=float(z2[11]) # will be the floating point number 8.3
-        print ("f0_max=",z3,"# Hz global maximum of fundamental frequency distribution")
+        # f0_max, Hz global maximum of fundamental frequency distribution
+        return z3
     except:
         z3=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return
 
 def myspf0q25(m,p):
     sound=p+"/"+m+".wav"
@@ -224,11 +224,11 @@ def myspf0q25(m,p):
         z2=z1.strip().split()
         z3=int(z2[12]) # will be the integer number 10
         z4=float(z2[11]) # will be the floating point number 8.3
-        print ("f0_quan25=",z3,"# Hz global 25th quantile of fundamental frequency distribution")
+        # f0_quan25, Hz global 25th quantile of fundamental frequency distribution
+        return z3
     except:
         z3=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return
 
 def myspf0q75(m,p):
     sound=p+"/"+m+".wav"
@@ -241,16 +241,19 @@ def myspf0q75(m,p):
         z2=z1.strip().split()
         z3=int(z2[13]) # will be the integer number 10
         z4=float(z2[11]) # will be the floating point number 8.3
-        print ("f0_quan75=",z3,"# Hz global 75th quantile of fundamental frequency distribution")
+        # f0_quan75, Hz global 75th quantile of fundamental frequency distribution
+        return z3
     except:
         z3=0
-        print ("Try again the sound of the audio was not clear")
-    return;
+        return
 
 def mysptotal(m,p):
     sound=p+"/"+m+".wav"
     sourcerun=p+"/myspsolution.praat"
     path=p+"/"
+    print(sound)
+    print(sourcerun)
+    print(path)
     try:
         objects= run_file(sourcerun, -20, 2, 0.3, "yes",sound,path, 80, 400, 0.01, capture_output=True)
         print (objects[0]) # This will print the info from the sound object, and objects[0] is a parselmouth.Sound object
@@ -259,10 +262,43 @@ def mysptotal(m,p):
         z3=np.array(z2)
         z4=np.array(z3)[np.newaxis]
         z5=z4.T
-        dataset=pd.DataFrame({"number_ of_syllables":z5[0,:],"number_of_pauses":z5[1,:],"rate_of_speech":z5[2,:],"articulation_rate":z5[3,:],"speaking_duration":z5[4,:],
-                          "original_duration":z5[5,:],"balance":z5[6,:],"f0_mean":z5[7,:],"f0_std":z5[8,:],"f0_median":z5[9,:],"f0_min":z5[10,:],"f0_max":z5[11,:],
-                          "f0_quantile25":z5[12,:],"f0_quan75":z5[13,:]})
-        print (dataset.T)
+        print([
+            # float(z5[0, 0]),
+            # float(z5[1,0]),
+            float(z5[2,0]),
+            float(z5[3,0]),
+            # float(z5[4,0]),
+            # float(z5[5,0]),
+            float(z5[6,0]),
+            float(z5[7,0]),
+            float(z5[8,0]),
+            float(z5[9,0]),
+            float(z5[10,0]),
+            float(z5[11,0]),
+            float(z5[12,0]),
+            float(z5[13,0])
+        ])
+        return [
+            # float(z5[0, 0]),
+            # float(z5[1,0]),
+            float(z5[2,0]),
+            float(z5[3,0]),
+            # float(z5[4,0]),
+            # float(z5[5,0]),
+            float(z5[6,0]),
+            float(z5[7,0]),
+            float(z5[8,0]),
+            float(z5[9,0]),
+            float(z5[10,0]),
+            float(z5[11,0]),
+            float(z5[12,0]),
+            float(z5[13,0])
+        ]
+
+        # dataset=pd.DataFrame({"number_ of_syllables":z5[0,:],"number_of_pauses":z5[1,:],"rate_of_speech":z5[2,:],"articulation_rate":z5[3,:],"speaking_duration":z5[4,:],
+        #                   "original_duration":z5[5,:],"balance":z5[6,:],"f0_mean":z5[7,:],"f0_std":z5[8,:],"f0_median":z5[9,:],"f0_min":z5[10,:],"f0_max":z5[11,:],
+        #                   "f0_quantile25":z5[12,:],"f0_quan75":z5[13,:]})
+        # print (dataset.T)
     except:
         print ("Try again the sound of the audio was not clear")
     return;
